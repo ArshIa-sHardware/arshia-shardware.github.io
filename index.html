@@ -3,156 +3,279 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>AeroFlux — The Future of Flying Cars</title>
-  <meta name="description" content="AeroFlux builds student‑friendly flying cars with real safety tech. Preorders open."/>
+  <title>AeroFlux Air — Stream the Future of Flight</title>
+  <meta name="description" content="AeroFlux Air delivers concierge flying car memberships with cinematic design, Netflix-style storytelling, and 24/7 pilot support."/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Sora:wght@600;800&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="/assets/styles.css"/>
-  <link rel="icon" href="/assets/favicon.svg"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <link rel="icon" href="assets/favicon.svg"/>
 </head>
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm af-nav">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="/index.html">
-        <img src="/assets/logo.svg" width="28" height="28" alt="AeroFlux"/> <span class="brand">AeroFlux</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="nav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="/models.html">Models</a></li>
-          <li class="nav-item"><a class="nav-link" href="/tech.html">Tech</a></li>
-          <li class="nav-item"><a class="nav-link" href="/preorder.html">Preorder</a></li>
-          <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="/faq.html">FAQ</a></li>
-          <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <div id="_navbar"></div>
 
-  <!-- HERO -->
-  <header class="af-hero pt-6 pb-5 text-white">
-    <div class="container">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6">
-          <span class="badge rounded-pill text-bg-warning mb-3">Gen‑2 Prototype</span>
-          <h1 class="display-4 fw-800 lh-1 mb-3">Meet the <span class="accent">AeroFlux One</span></h1>
-          <p class="lead text-white-75">A street‑legal EV that lifts. Zero runway, quiet rotors, and safety first. Designed for school commutes, weekend trips, and creator life.</p>
-          <div class="d-flex gap-2 mt-2">
-            <a class="btn btn-primary btn-lg" href="/preorder.html">Reserve now</a>
-            <a class="btn btn-outline-light btn-lg" href="/models.html">See models</a>
-          </div>
-          <div class="d-flex gap-4 mt-4 small text-white-75">
-            <span>4.9★ early pilots</span>
-            <span>FAA‑guided R&D</span>
-            <span>Student discounts</span>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-xl af-hero-media">
-            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1800&q=80" class="w-100 h-100 object-fit-cover" alt="AeroFlux One"/>
-            <button class="btn btn-light btn-sm af-hero-zoom" data-bs-toggle="modal" data-bs-target="#lightbox" data-img="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=2400&q=80" data-title="AeroFlux One — Hover mode">Zoom</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- VALUE STRIP -->
-  <section class="py-5 border-top bg-body-tertiary">
-    <div class="container">
-      <div class="row text-center g-4">
-        <div class="col-6 col-lg-3"><h6 class="mb-1">VTOL</h6><p class="text-muted small">Vertical takeoff/landing</p></div>
-        <div class="col-6 col-lg-3"><h6 class="mb-1">300 mi</h6><p class="text-muted small">Combined range</p></div>
-        <div class="col-6 col-lg-3"><h6 class="mb-1"><span class="accent">Quiet</span> rotors</h6><p class="text-muted small">Neighborhood‑friendly</p></div>
-        <div class="col-6 col-lg-3"><h6 class="mb-1">Safety‑first</h6><p class="text-muted small">Redundant drives</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MODELS PREVIEW -->
-  <section class="py-6">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-end mb-3">
-        <h2 class="fw-800 mb-0">Pick your AeroFlux</h2>
-        <a href="/models.html" class="link-dark">View all models</a>
-      </div>
-      <div class="row g-4">
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="card af-card h-100">
-            <img src="https://images.unsplash.com/photo-1517173894763-6bcf0d6f3bf0?w=1600&q=80" class="card-img-top" alt="AeroFlux One"/>
-            <div class="card-body">
-              <h5 class="card-title mb-1">AeroFlux One</h5>
-              <p class="text-muted small mb-3">2‑seat, city‑first flyer. Compact, efficient, ultra‑quiet.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="fw-bold">From $79k</span>
-                <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#lightbox" data-img="https://images.unsplash.com/photo-1517173894763-6bcf0d6f3bf0?w=2400&q=80" data-title="AeroFlux One">Preview</button>
-              </div>
+  <main class="af-main">
+    <section class="af-hero text-white">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-7">
+            <span class="af-eyebrow">AeroFlux Originals</span>
+            <h1 class="af-hero-title">Stream the skyline. Fly above the gridlock.</h1>
+            <p class="af-hero-lead">AeroFlux Air blends cinematic design with pilot-first safety to deliver on-demand flying cars for creators, founders, and future-forward families.</p>
+            <div class="af-hero-actions">
+              <a class="btn btn-primary btn-lg" href="preorder.html">Start Your Membership</a>
+              <a class="btn btn-outline-light btn-lg" href="models.html">Preview the Fleet</a>
             </div>
+            <ul class="af-hero-highlights">
+              <li>Concierge pilots on call 24/7</li>
+              <li>VTOL launches from rooftop microports</li>
+              <li>Founders pricing locked for 2025 departures</li>
+            </ul>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="card af-card h-100">
-            <img src="https://images.unsplash.com/photo-1482192505345-5655af888cc4?w=1600&q=80" class="card-img-top" alt="AeroFlux X"/>
-            <div class="card-body">
-              <h5 class="card-title mb-1">AeroFlux X</h5>
-              <p class="text-muted small mb-3">Performance build. More lift, more range, more flex.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="fw-bold">From $119k</span>
-                <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#lightbox" data-img="https://images.unsplash.com/photo-1482192505345-5655af888cc4?w=2400&q=80" data-title="AeroFlux X">Preview</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="card af-card h-100">
-            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600&q=80" class="card-img-top" alt="AeroFlux S"/>
-            <div class="card-body">
-              <h5 class="card-title mb-1">AeroFlux S</h5>
-              <p class="text-muted small mb-3">Sport spec. Lighter frame. Weekend flyer energy.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="fw-bold">From $99k</span>
-                <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#lightbox" data-img="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=2400&q=80" data-title="AeroFlux S">Preview</button>
+          <div class="col-lg-5">
+            <div class="af-hero-poster">
+              <img src="https://images.unsplash.com/photo-1518306727298-4c19a7907c77?w=1800&q=80" alt="AeroFlux One hovering above a neon skyline"/>
+              <div class="af-hero-overlay">
+                <span class="badge text-bg-danger mb-2">Now Boarding</span>
+                <h3>AeroFlux One • Midnight Edition</h3>
+                <p class="small mb-3">300 mi range • whisper-quiet rotors • autonomous co-pilot</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="af-pill">2 seats</span>
+                  <span class="af-pill">Urban VTOL</span>
+                  <span class="af-pill">Connected HUD</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA -->
-  <section class="py-6 bg-dark text-white">
-    <div class="container">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-8">
-          <h3 class="fw-800 mb-1">Early access gets the best price</h3>
-          <p class="text-white-75 mb-0">Lock in founding perks, pilot training invites, and first‑ship status.</p>
+    <section class="af-metrics">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-6 col-lg-3">
+            <div class="af-metric-number">300 mi</div>
+            <div class="af-metric-label">Range per charge</div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="af-metric-number">22 min</div>
+            <div class="af-metric-label">Average city hop</div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="af-metric-number">4.9 ★</div>
+            <div class="af-metric-label">Test pilot rating</div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="af-metric-number">24/7</div>
+            <div class="af-metric-label">Concierge coverage</div>
+          </div>
         </div>
-        <div class="col-lg-4 text-lg-end"><a class="btn btn-primary btn-lg" href="/preorder.html">Reserve AeroFlux</a></div>
+      </div>
+    </section>
+
+    <section class="af-section">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-end justify-content-between gap-3">
+          <div>
+            <h2 class="af-section-title">Flagship fleet</h2>
+            <p class="af-section-subtitle">Select your storyline. Each flying car unlocks different seats, range, and cinematic interior experiences.</p>
+          </div>
+          <a class="af-link" href="models.html">Explore all models</a>
+        </div>
+        <div class="af-rail" role="list">
+          <article class="af-rail-card" role="listitem">
+            <div class="af-rail-media">
+              <img src="https://images.unsplash.com/photo-1517173894763-6bcf0d6f3bf0?w=1600&q=80" alt="AeroFlux One cabin"/>
+            </div>
+            <div class="af-rail-body">
+              <div>
+                <h3>AeroFlux One</h3>
+                <p class="small mb-0">Compact daily flyer with autopilot sequences for city skylanes and weekend escapes.</p>
+              </div>
+              <div class="af-rail-meta">
+                <span class="af-pill">From $79k</span>
+                <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#lightbox" data-img="https://images.unsplash.com/photo-1517173894763-6bcf0d6f3bf0?w=2400&q=80" data-title="AeroFlux One">View</button>
+              </div>
+            </div>
+          </article>
+          <article class="af-rail-card" role="listitem">
+            <div class="af-rail-media">
+              <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=1600&q=80" alt="AeroFlux X performance model"/>
+            </div>
+            <div class="af-rail-body">
+              <div>
+                <h3>AeroFlux X</h3>
+                <p class="small mb-0">Performance craft tuned for long-range storytelling, with adaptive thrusters and luminous interiors.</p>
+              </div>
+              <div class="af-rail-meta">
+                <span class="af-pill">From $119k</span>
+                <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#lightbox" data-img="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=2400&q=80" data-title="AeroFlux X">View</button>
+              </div>
+            </div>
+          </article>
+          <article class="af-rail-card" role="listitem">
+            <div class="af-rail-media">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600&q=80" alt="AeroFlux S sport edition"/>
+            </div>
+            <div class="af-rail-body">
+              <div>
+                <h3>AeroFlux S</h3>
+                <p class="small mb-0">Sport spec with lightweight frame and cinematic glass canopy for immersive skyline views.</p>
+              </div>
+              <div class="af-rail-meta">
+                <span class="af-pill">From $99k</span>
+                <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#lightbox" data-img="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=2400&q=80" data-title="AeroFlux S">View</button>
+              </div>
+            </div>
+          </article>
+          <article class="af-rail-card" role="listitem">
+            <div class="af-rail-media">
+              <img src="https://images.unsplash.com/photo-1520975922203-b6a5d19b8a88?w=1600&q=80" alt="AeroFlux Horizon panoramic interior"/>
+            </div>
+            <div class="af-rail-body">
+              <div>
+                <h3>AeroFlux Horizon</h3>
+                <p class="small mb-0">Panoramic lounge with adaptive lighting, holo-stream displays, and extended endurance packs.</p>
+              </div>
+              <div class="af-rail-meta">
+                <span class="af-pill">Founder exclusive</span>
+                <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#lightbox" data-img="https://images.unsplash.com/photo-1520975922203-b6a5d19b8a88?w=2400&q=80" data-title="AeroFlux Horizon">View</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="af-section">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-6">
+            <div class="af-panel h-100 p-4 p-lg-5">
+              <h3 class="fw-800 mb-3">Concierge streaming service for the sky</h3>
+              <p>Pick a route in the AeroFlux app and Nova — your AI + human copilot team — lines up launch windows, weather checks, and rooftop microport access in seconds.</p>
+              <ul class="small mb-0">
+                <li>Dynamic scheduling with live traffic overlays</li>
+                <li>In-flight entertainment synced with your playlists</li>
+                <li>Safety stack monitored by our operations studio</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="af-panel h-100 p-4 p-lg-5">
+              <h3 class="fw-800 mb-3">Membership tiers unlocked</h3>
+              <div class="d-flex flex-column gap-3">
+                <div>
+                  <h5 class="mb-1">Creator Pass</h5>
+                  <p class="small mb-0">Flexible hours, shared hangar access, and content production support for aerial storytelling.</p>
+                </div>
+                <div>
+                  <h5 class="mb-1">Founder Studio</h5>
+                  <p class="small mb-0">Private craft, dedicated pilot team, and bespoke route design for executive commutes.</p>
+                </div>
+                <div>
+                  <h5 class="mb-1">Galaxy Circle</h5>
+                  <p class="small mb-0">Invitation-only, with multi-city bases, overnight concierge, and custom interior builds.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="af-section">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-end justify-content-between gap-3">
+          <div>
+            <h2 class="af-section-title">Experience channels</h2>
+            <p class="af-section-subtitle">Curated journeys feel like your favorite series — bingeable, episodic, and endlessly replayable.</p>
+          </div>
+        </div>
+        <div class="af-rail" role="list">
+          <article class="af-rail-card" role="listitem">
+            <div class="af-rail-media">
+              <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1600&q=80" alt="Sunrise coastline flight"/>
+            </div>
+            <div class="af-rail-body">
+              <h3>Sunrise Rush</h3>
+              <p class="small mb-0">Beat dawn traffic with golden-hour departures and live cinematography tips.</p>
+            </div>
+          </article>
+          <article class="af-rail-card" role="listitem">
+            <div class="af-rail-media">
+              <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=1600&q=80" alt="Night flight over city lights"/>
+            </div>
+            <div class="af-rail-body">
+              <h3>Neon Drift</h3>
+              <p class="small mb-0">Nighttime skyline cruises with synced lighting, immersive sound, and guided narration.</p>
+            </div>
+          </article>
+          <article class="af-rail-card" role="listitem">
+            <div class="af-rail-media">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600&q=80" alt="Mountain retreat landing"/>
+            </div>
+            <div class="af-rail-body">
+              <h3>Altitude Escape</h3>
+              <p class="small mb-0">Weekend getaways to mountaintop villas with concierge hospitality waiting upon landing.</p>
+            </div>
+          </article>
+          <article class="af-rail-card" role="listitem">
+            <div class="af-rail-media">
+              <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=1600&q=80" alt="Desert microport"/>
+            </div>
+            <div class="af-rail-body">
+              <h3>Desert Pulse</h3>
+              <p class="small mb-0">Future-forward desert rallies with performance tuning, drone cinematics, and nighttime bonfires.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="af-section">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
+              <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?w=1800&q=80" class="w-100 h-100 object-fit-cover" alt="AeroFlux mission control"/>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="af-section-title">Mission control in your pocket</h2>
+            <p class="af-section-subtitle mb-4">Every flight is supervised by AeroFlux Nova — a hybrid team of AI routing and human pilots who keep you safe, stylish, and ahead of schedule.</p>
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex gap-3">
+                <span class="af-pill">Live Telemetry</span>
+                <p class="small mb-0">Stream altitude, battery health, and traffic layers to your devices.</p>
+              </div>
+              <div class="d-flex gap-3">
+                <span class="af-pill">Safety Stack</span>
+                <p class="small mb-0">Redundant rotors, ballistic parachute, and pilot-assist AI guard every storyline.</p>
+              </div>
+              <div class="d-flex gap-3">
+                <span class="af-pill">Creator Tools</span>
+                <p class="small mb-0">Multi-camera capture, stabilized gimbals, and collaboration rooms for your crew.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="af-cta">
+        <h2>Reserve your seat in the skyline</h2>
+        <p>Founding memberships are limited. Chat with Nova, lock in your launch window, and stream the future ahead of everyone else.</p>
+        <a class="btn btn-primary btn-lg" href="preorder.html">Lock Founder Pricing</a>
       </div>
     </div>
-  </section>
+  </main>
 
-  <!-- FOOTER -->
   <div id="_footer"></div>
-
-  <!-- Lightbox Modal for image popups -->
-  <div class="modal fade" id="lightbox" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-      <div class="modal-content bg-black">
-        <button class="btn-close btn-close-white ms-auto me-2 mt-2" data-bs-dismiss="modal" aria-label="Close"></button>
-        <div class="modal-body p-0">
-          <img id="lbImg" class="w-100 h-100 object-fit-contain" alt="Preview"/>
-          <div class="p-3 text-white-50" id="lbTitle"></div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div id="_lightbox"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="/assets/app.js"></script>
+  <script src="assets/app.js"></script>
 </body>
 </html>
